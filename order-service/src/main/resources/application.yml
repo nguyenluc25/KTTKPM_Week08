@@ -1,0 +1,15 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:postgresql://order-db:5432/orders
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
